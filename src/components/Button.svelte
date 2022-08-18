@@ -25,7 +25,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
     background-size: 100% 100%;
-    .btn:hover {
+    &:hover {
       background-size: 200% 200%;
       background-position-x: 100%;
     }
