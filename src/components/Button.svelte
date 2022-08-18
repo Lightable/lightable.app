@@ -16,7 +16,7 @@
   .btn {
     all: unset;
     padding: 1em;
-    border-radius: 2em;
+    border-radius: .5em;
     display: flex;
     flex-direction: row;
     justify-content: center;

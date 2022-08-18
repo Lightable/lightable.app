@@ -6,6 +6,7 @@
     --background: #0C1013;
     --color: white;
     --color-secondary: rgb(124, 124, 124);
+    --color-primary: rgb(180, 179, 179);
 }
 
 *,
@@ -52,4 +53,36 @@ a {
 .no-select,
 .ns {
     user-select: none;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    margin: 5em;
+    text-align: center;
+    .title {
+        -webkit-text-stroke: 1.3px transparent;
+        font-size: 2.5em;
+        display: flex;
+        flex-direction: column;
+        h1:first-child {
+            background: linear-gradient(to right, #f46081, #6c82fa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1:last-child {
+            background: linear-gradient(to right, #513cff, #22bbff, #a0fbcf);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .subtitle {
+        font-weight: 400;
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.384);
+    }
 }

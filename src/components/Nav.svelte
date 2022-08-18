@@ -10,9 +10,12 @@
     </div>
   </a>
   <div class="right">
-    <a href={key === "/product" ? "" : "/product"} class="grey" disabled={key === "/product"}>Product</a>
+    <a href="/product"  class={key === "/product"  ? "" : "grey"}>Product</a>
+    <a href="/promise"  class={key === "/promise"  ? "" : "grey"}>Our Promise</a>
+    <a href="/download" class={key === "/download" ? "" : "grey"}>Download</a>
+    <!-- <a href={key === "/product" ? "" : "/product"} class="grey" disabled={key === "/product"}>Product</a>
     <a href={key === "/promise" ? "" : "/promise"} class="grey" disabled={key === "/promise"}>Our Promise</a>
-    <a href={key === "/download" ? "" : "/download"} disabled={key === "/download"}>Download</a>
+    <a href={key === "/download" ? "" : "/download"} disabled={key === "/download"}>Download</a> -->
   </div>
 </nav>
 
@@ -21,10 +24,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2em;
+    padding: 1.25em;
     align-items: center;
     a {
-      transition: color 0.2s ease-in;
+      padding: .75em;
+      border-radius: .5em;
+      transition: all 0.2s ease-in;
       .left {
         display: flex;
         flex-direction: row;
@@ -36,22 +41,17 @@
           height: 25px;
         }
       }
-      &[disabled="true"] {
-        cursor: not-allowed;
-      }
-
-      &:hover {
-        &[disabled="false"] {
-          color: rgba(255, 255, 255, 0.692);
-        }
-      }
     }
     .right {
       display: flex;
       flex-direction: row;
       gap: 4em;
       a {
-        transition: color 0.2s ease-in;
+        cursor: pointer !important;
+        transition: all 0.2s ease-in;
+      }
+      a:hover {
+        background-color: #18181f;
       }
     }
   }
