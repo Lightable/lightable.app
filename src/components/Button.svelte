@@ -1,33 +1,33 @@
 <script>
-	export let content;
-	export let gradient;
+  export let content;
+  export let gradient;
 </script>
 
 <!-- <div class="button-container"> -->
-    <button class="btn" style="background: linear-gradient({gradient.direction}, {gradient.colors.join(', ')});">
-        <!-- <div class="icon"> -->
-            <slot />
-        <!-- </div> -->
-        {content}
-    </button>
-<!-- </div> -->
+<button class="btn" style="background-image: linear-gradient({gradient.direction}, {gradient.colors.join(', ')});" aria-pressed="false">
+  <!-- <div class="icon"> -->
+  <slot />
+  <!-- </div> -->
+  {content}
+</button>
 
-<style>
-	.btn {
-		all: unset;
-		padding: 1em;
-		border-radius: 2em;
-		background-color: red;
-		box-shadow: rgba(255, 255, 255, 0.075) 0px 2px 8px 5px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: .5em;
-        cursor: pointer;
-        transition: all .25s ease-in-out;
-	}
+<!-- </div> -->
+<style lang="scss" scoped>
+  .btn {
+    all: unset;
+    padding: 1em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    background-size: 100% 100%;
     .btn:hover {
-        box-shadow: rgba(255, 255, 255, 0.11) 0px 2px 10px 5px;
+      background-size: 200% 200%;
+      background-position-x: 100%;
     }
+  }
 </style>
