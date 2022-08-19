@@ -1,10 +1,13 @@
 <script>
   export let content;
   export let gradient;
+  const handleRedir = () => {
+    location.href = "https://github.com/brys0/Lightable/releases";
+  };
 </script>
 
 <!-- <div class="button-container"> -->
-<button class="btn" style="background-image: linear-gradient({gradient.direction}, {gradient.colors.join(', ')});" aria-pressed="false">
+<button class="btn ns" style="background-image: linear-gradient({gradient.direction}, {gradient.colors.join(', ')});" aria-pressed="false" on:click={() => handleRedir()}>
   <!-- <div class="icon"> -->
   <slot />
   <!-- </div> -->
@@ -16,7 +19,7 @@
   .btn {
     all: unset;
     padding: 1em;
-    border-radius: .5em;
+    border-radius: 0.5em;
     display: flex;
     flex-direction: row;
     justify-content: center;

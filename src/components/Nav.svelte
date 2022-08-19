@@ -10,9 +10,9 @@
     </div>
   </a>
   <div class="right">
-    <a href="/product"  class={key === "/product"  ? "" : "grey"}>Product</a>
-    <a href="/promise"  class={key === "/promise"  ? "" : "grey"}>Our Promise</a>
-    <a href="/download" class={key === "/download" ? "" : "grey"}>Download</a>
+    <a href="/product"  class={key === "/product"  ? "" : "grey"} sveltekit:prefetch>Product</a>
+    <a href="/promise"  class={key === "/promise"  ? "" : "grey"} sveltekit:prefetch>Our Promise</a>
+    <a href="/download" class={key === "/download" ? "" : "grey"} sveltekit:prefetch>Download</a>
     <!-- <a href={key === "/product" ? "" : "/product"} class="grey" disabled={key === "/product"}>Product</a>
     <a href={key === "/promise" ? "" : "/promise"} class="grey" disabled={key === "/promise"}>Our Promise</a>
     <a href={key === "/download" ? "" : "/download"} disabled={key === "/download"}>Download</a> -->
@@ -58,20 +58,25 @@
   @media screen and (min-width: 524px) {
     /* Desktop */
     .hidden-desktop {
-      display: none;
+      display: none !important;
     }
   }
   @media screen and (max-width: 523px) {
     /* Mobile */
     .navbar {
-      flex-direction: column;
-      gap: 2.5em;
+      flex-direction: column !important;
+      gap: 2.5em !important;
     }
     .hidden-mobile {
-      display: none;
+      display: none !important;
     }
     .right {
-      gap: 2.5em;
+      gap: 2.5em !important;
+    }
+  }
+  @media only screen and (max-width: 478px) {
+    .right {
+      gap: 1em !important;
     }
   }
 </style>
