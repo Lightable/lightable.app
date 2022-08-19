@@ -28,7 +28,7 @@
         </div>
         <div class="description">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, provident.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique explicabo eius libero ea, numquam officiis expedita quam minus? Veritatis velit recusandae assumenda quae laboriosam architecto fugiat hic ad excepturi. Tempora alias ea minima error eaque dolore at ratione! Voluptatum, repellat, pariatur voluptatem ad iure consequuntur a nesciunt eaque sed amet perferendis tempore id iste veniam praesentium quaerat, maxime laboriosam sint! Necessitatibus dolorum fugit fugiat. Molestiae similique ducimus possimus veritatis laboriosam? Cum libero, molestiae fugiat ipsum facilis ab cupiditate fugit.
             </p>
         </div>
     </div>
@@ -43,6 +43,12 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 5em;
+    }
+    svg {
+        min-width: 10em;
+        max-width: 10em;
+        min-height: 10em;
+        max-height: 10em;
     }
     path { fill: white;}
     .feature {
@@ -62,9 +68,16 @@
             font-weight: bold;
             color: var(--color-primary);
         }
+        .description::-webkit-scrollbar {
+            display: none;
+        }
         .description {
             text-align: center;
             color: var(--color-secondary);
+            overflow-y: scroll;
+            max-height: 3.5em;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     }
     @media screen and (max-width: 523px) {
