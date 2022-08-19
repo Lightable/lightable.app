@@ -11,7 +11,7 @@
   </a>
   <div class="right">
     <a href="/product"  class={key === "/product"  ? "" : "grey"} sveltekit:prefetch>Product</a>
-    <a href="/promise"  class={key === "/promise"  ? "" : "grey"} sveltekit:prefetch>Our Promise</a>
+    <a href="/promise"  class={key === "/promise"  ? "" : "grey"} sveltekit:prefetch>Promise</a>
     <a href="/download" class={key === "/download" ? "" : "grey"} sveltekit:prefetch>Download</a>
     <!-- <a href={key === "/product" ? "" : "/product"} class="grey" disabled={key === "/product"}>Product</a>
     <a href={key === "/promise" ? "" : "/promise"} class="grey" disabled={key === "/promise"}>Our Promise</a>
