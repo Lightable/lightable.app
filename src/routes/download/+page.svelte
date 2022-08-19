@@ -5,6 +5,14 @@
     }
 </script>
 
+<svelte:head>
+  <title>Lightable - Download</title>
+  <meta content="Lightable - Download Today" property="og:title" />
+  <meta content="https://lightable.app/download" property="og:url" />
+  <meta content="#689ff7" name="theme-color" />
+  <meta content="https://api.lightable.app/experimental/image/generate?type=EMBED&text=[[0xf6d9]]%20Download%20[[0xf6d9]]&color=689ff7" property="og:image" />
+</svelte:head>
+
 <div class="downloads">
 
     <div class="download">
@@ -16,7 +24,7 @@
         <div class="content">
             <h1 class="title">Download for Windows</h1>
             <button class="download" data-redirect="https://github.com/brys0/Lightable/releases" on:click={redirect}>Download</button>
-        </div> <!-- column -->
+        </div>
     </div>
 
     <div class="download">
