@@ -1,0 +1,7 @@
+version: '2'
+services:
+  web:
+    image: ghcr.io/br4dw/lightable.app:main
+    ports:
+      - "4173:4173"
+      
