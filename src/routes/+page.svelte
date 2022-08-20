@@ -67,4 +67,9 @@
       font-size: 1.5em !important;
     }
   }
+  @media screen and (max-width: 523px) {
+   .title-container {
+    margin-top: .5em;
+   }
+  }
 </style>
