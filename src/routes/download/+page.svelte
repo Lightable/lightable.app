@@ -144,9 +144,7 @@
     .external-link {
       color: rgba(25, 28, 38, 1) !important;
       font-weight: bold;
-      &:hover {
-        color:rgba(25, 28, 38, 0.9);
-      }
+      margin-bottom: 10px;
     }
   }
 </style>
