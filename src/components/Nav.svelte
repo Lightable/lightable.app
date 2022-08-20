@@ -32,7 +32,6 @@
       padding: 0.75em;
       border-radius: 0.5em;
       transition: all 0.2s ease-in;
-
       .left {
         display: flex;
         flex-direction: row;

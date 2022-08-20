@@ -1,11 +1,11 @@
 <script>
-  export let content;
-  export let gradient;
-  export let redirect;
-  export let text = false;
+  export let content
+  export let gradient
+  export let redirect
+  export let text = false
   const handleRedir = () => {
-    location.href = redirect;
-  };
+    window.open(redirect)
+  }
 </script>
 
 <button class="btn ns" style={!text ? `background-image: linear-gradient(${gradient?.direction}, ${gradient?.colors.join(", ")});` : ""} on:click={handleRedir} {text}>

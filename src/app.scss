@@ -37,9 +37,11 @@ html, body {
     background-color: var(--background);
     color: var(--color);
 }
-.grey {
+a.grey {
     color: var(--color-secondary);
-    cursor: not-allowed !important;
+    &:hover {
+        color: var(--color);
+    }
 }
 
 p,
