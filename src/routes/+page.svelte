@@ -9,6 +9,7 @@
   <meta content="Lightable <3 OSS" property="og:site_name" />
   <meta content="https://lightable.app/" property="og:url" />
   <meta content="https://api.lightable.app/experimental/image/generate?type=EMBED&amp;text=[[0xfbe6]]%20Lightable%20[[0xfbe6]]&amp;color=237DC5" property="og:image">
+  <meta content="Free, open-source, forever. Join early access today" property="og:description">
 </svelte:head>
 
 <main>
