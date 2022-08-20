@@ -8,7 +8,7 @@
   <meta content="Lightable" property="og:title" />
   <meta content="Lightable <3 OSS" property="og:site_name" />
   <meta content="https://lightable.app/" property="og:url" />
-  <meta content="https://api.lightable.app/experimental/image/generate?type=EMBED&amp;text=[[0xf98a]]%20Lightable%20[[0xf98a]]&amp;color=58F2A2" property="og:image">
+  <meta content="https://api.lightable.app/experimental/image/generate?type=EMBED&amp;text=[[0xfbe6]]%20Lightable%20[[0xfbe6]]&amp;color=237DC5" property="og:image">
 </svelte:head>
 
 <main>
