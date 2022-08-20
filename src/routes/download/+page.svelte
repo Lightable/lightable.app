@@ -10,7 +10,7 @@
   <meta content="Lightable - Download Today" property="og:title" />
   <meta content="https://lightable.app/download" property="og:url" />
   <meta content="#689ff7" name="theme-color" />
-  <meta content="Download Lightable for Windows today!" property="og:description">
+  <meta content="Download Lightable for Windows today!" property="og:description" />
   <meta content="https://api.lightable.app/experimental/image/generate?type=EMBED&text=[[0xf6d9]]%20Download%20[[0xf6d9]]&color=689ff7" property="og:image" />
 </svelte:head>
 
@@ -128,18 +128,25 @@
   }
   @media only screen and (max-width: 522px) {
     .downloads {
-        margin: 0;
-        .download {
+      margin: 0;
+      .download {
+        flex-direction: column;
+        .content {
+          .title {
+            display: flex;
+            align-items: center;
             flex-direction: column;
-            .content {
-                .title {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    gap: 8px;
-                }
-            }
+            gap: 8px;
+          }
         }
+      }
+    }
+    .external-link {
+      color: rgba(25, 28, 38, 1) !important;
+      font-weight: bold;
+      &:hover {
+        color:rgba(25, 28, 38, 0.9);
+      }
     }
   }
 </style>
