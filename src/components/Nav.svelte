@@ -80,7 +80,7 @@
     /* Mobile */
     .navbar {
       flex-direction: column !important;
-      gap: 1.5em !important;
+      gap: 1em !important;
     }
     .hidden-mobile {
       display: none !important;
