@@ -7,8 +7,12 @@
     --color: white;
     --color-secondary: rgb(124, 124, 124);
     --color-primary: rgb(180, 179, 179);
-}
 
+    color: var(--color);
+}
+html, body {
+    margin: 0;
+}
 *,
 *::before,
 *::after {
@@ -16,8 +20,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+.bg {
     background-image: url('/bg2.svg');
     background-position: center center;
     background-size: cover;
@@ -27,10 +30,13 @@ body {
     background-clip: border-box;
     background-color: #101014;
     background-attachment: fixed;
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
     background-color: var(--background);
     color: var(--color);
 }
-
 .grey {
     color: var(--color-secondary);
     cursor: not-allowed !important;

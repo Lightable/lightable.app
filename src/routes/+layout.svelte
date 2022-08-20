@@ -5,6 +5,7 @@
 	import { page } from '$app/stores';
 </script>
 
+<div class="bg"/>
 <Nav key={$page.url.pathname} />
 
 <PageTransitions refresh={$page.url.pathname}>
