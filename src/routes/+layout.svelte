@@ -9,6 +9,6 @@
 <Nav key={$page.url.pathname} />
 
 <PageTransitions refresh={$page.url.pathname}>
-  <slot />
+  	<slot />
 </PageTransitions>
 
