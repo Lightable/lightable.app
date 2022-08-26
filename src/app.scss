@@ -7,17 +7,19 @@
     --color: white;
     --color-secondary: rgb(124, 124, 124);
     --color-primary: rgb(180, 179, 179);
-
     color: var(--color);
 }
-html, body {
-    margin: 0;
-}
+
 *,
 *::before,
 *::after {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+}
+
+*:focus {
+    transition: none !important;
+    outline: 2px dotted var(--color-secondary);
 }
 
 .bg {
@@ -37,6 +39,7 @@ html, body {
     background-color: var(--background);
     color: var(--color);
 }
+
 a.grey {
     color: var(--color-secondary);
     &:hover {
@@ -44,6 +47,8 @@ a.grey {
     }
 }
 
+html,
+body,
 p,
 h1,
 h2,

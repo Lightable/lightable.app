@@ -56,6 +56,7 @@
             display: flex;
             flex-direction: row;
             gap: 4em;
+            align-items: center;
             a {
                 cursor: pointer !important;
                 transition: all 0.2s ease-in;

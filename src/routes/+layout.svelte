@@ -1,8 +1,8 @@
 <script>
-	import "../app.scss";
-  	import Nav from "../components/Nav.svelte";
-	import PageTransitions from '../components/PageTransition.svelte';
-	import { page } from '$app/stores';
+	import "../app.scss"
+  	import Nav from "../components/Nav.svelte"
+	import PageTransitions from '../components/PageTransition.svelte'
+	import { page } from '$app/stores'
 </script>
 
 <div class="bg"/>
